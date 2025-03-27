@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,6 +48,12 @@
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
   }
 
+  /* Improve text spacing for all headings */
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
   section {
     @apply px-6 py-16 md:py-24 md:px-12 lg:px-24 overflow-hidden;
   }
@@ -79,10 +84,14 @@
   
   .section-title {
     @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-risen-600;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
   }
   
   .section-subtitle {
     @apply text-xl md:text-2xl font-medium mb-8 text-risen-500;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
   }
 }
 
