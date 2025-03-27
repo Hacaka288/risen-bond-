@@ -40,7 +40,7 @@ const ProductInfo = () => {
         <div className="h-px bg-risen-100"></div>
         
         <p className="text-risen-500 leading-relaxed"> 
-        No 25, Peace Castle Estate, Ogombo Ajah, Lagos State.
+        No 25, Peace Castle Estate, Ogombo after Ajah, Lagos State.
         </p>
         
         <Link 

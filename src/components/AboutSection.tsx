@@ -68,7 +68,7 @@ const AboutSection = () => {
           </div>
           <div className="mt-4 text-risen-500 space-y-2">
             <p className="font-medium text-lg">
-              No 25, Peace Castle Estate, Ogombo Ajah, Lagos State
+              No 25, Peace Castle Estate, Ogombo after Ajah, Lagos State
             </p>
             <p>
               Our factory is located at Peace Castle Estate. For directions: Head southwest from the main junction, 
@@ -76,7 +76,7 @@ const AboutSection = () => {
               No 25, Peace Castle Estate.
             </p>
             <p className="text-sm mt-1">
-              For any assistance finding us, please contact our customer service team via WhatsApp.
+              For any assistance finding us, please contact us on WhatsApp.
             </p>
           </div>
         </div>
