@@ -1,0 +1,98 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 210 50% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 50% 10%;
+
+    --primary: 210 100% 30%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 30% 96%;
+    --secondary-foreground: 210 50% 10%;
+
+    --muted: 210 30% 96%;
+    --muted-foreground: 210 40% 50%;
+
+    --accent: 210 30% 96%;
+    --accent-foreground: 210 50% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 30% 90%;
+    --input: 210 30% 90%;
+    --ring: 210 90% 40%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased overflow-x-hidden;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  section {
+    @apply px-6 py-16 md:py-24 md:px-12 lg:px-24 overflow-hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-lg border border-white/40 shadow-lg rounded-2xl;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .slide-in-element {
+    @apply opacity-0;
+    animation: slideIn 0.6s ease-out forwards;
+    animation-play-state: paused;
+  }
+
+  .slide-in-element.animate {
+    animation-play-state: running;
+  }
+
+  .free-shipping-badge {
+    @apply inline-block bg-risen-500 text-white text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-risen-600;
+  }
+  
+  .section-subtitle {
+    @apply text-xl md:text-2xl font-medium mb-8 text-risen-500;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
