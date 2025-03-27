@@ -1,4 +1,5 @@
 import { Clock, Shield, TrendingUp, Truck } from "lucide-react";
+import MapComponent from "./GoogleMap";
 
 const AboutSection = () => {
   const features = [
@@ -53,30 +54,17 @@ const AboutSection = () => {
       <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="glass-card p-8 rounded-2xl">
           <h3 className="text-xl font-bold text-risen-600 mb-4">Our Location</h3>
-          <div className="bg-risen-50 rounded-xl overflow-hidden h-auto">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d993.3015324922631!2d3.618641700000001!3d6.459428300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d6.4594283!2d3.6186417!4m3!3m2!1d6.4586667!2d3.6182723!5e0!3m2!1sen!2sng!4v1699862369424!5m2!1sen!2sng" 
-              width="100%" 
-              height="400" 
-              style={{ border: 0 }} 
-              allowFullScreen={true} 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Peace Castle Estate via Tonia Emmanuel Ave"
-              className="w-full h-full"
-            />
+          <div className="h-80 rounded-xl overflow-hidden">
+            <MapComponent height="100%" />
           </div>
-          <div className="mt-4 text-risen-500 space-y-2">
-            <p className="font-medium text-lg">
-              No 25, Peace Castle Estate, Ogombo after Ajah, Lagos State
+          <div className="mt-4 text-risen-500">
+            <p className="font-medium">Peace Castle Estate via Tonia Emmanuel Ave</p>
+            <p className="mt-2 text-sm">
+              <span className="font-medium">Address:</span> No 25, Peace Castle Estate, Ogombo after Ajah, Lagos State.
             </p>
-            <p>
-              Our factory is located at Peace Castle Estate. For directions: Head southwest from the main junction, 
-              turn right toward Tonia Emmanuel Ave, then right onto Tonia Emmanuel Ave to reach our location at 
-              No 25, Peace Castle Estate.
-            </p>
-            <p className="text-sm mt-1">
-              For any assistance finding us, please contact us on WhatsApp.
+            <p className="mt-3">
+              We are based in Lagos, and we deliver nationwide. Contact us for inquiries 
+              about delivery outside Lagos. We're committed to reaching you wherever you are.
             </p>
           </div>
         </div>
