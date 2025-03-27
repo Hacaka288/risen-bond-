@@ -22,8 +22,7 @@ const OrderPage = () => {
       </button>
       
       <section className="scroll-mt-24">
-        <div className="container mx-auto">
-          <h2 className="section-title text-center mb-12">Place Your Order</h2>
+        <div className="container mx-auto px-3 sm:px-4">
           <OrderForm onOrderSuccess={() => setIsThankYouOpen(true)} />
         </div>
       </section>

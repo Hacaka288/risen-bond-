@@ -40,7 +40,7 @@ const ProductInfo = () => {
         <div className="h-px bg-risen-100"></div>
         
         <p className="text-risen-500 leading-relaxed"> 
-          Don't miss this incredible offer.
+        No 25, Peace Castle Estate, Ogombo Ajah, Lagos State.
         </p>
         
         <Link 
